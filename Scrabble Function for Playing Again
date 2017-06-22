@@ -1,0 +1,16 @@
+def play_game(word_list):
+    def playAgain():
+        again = raw_input("Would you like to play again? Enter n for a new random hand, enter r to replay the previous hand, enter e to exit the game. ")
+        if again == 'n':
+            print "Ok"
+            deal_hand()
+        if again == "r":
+            print "Ok"
+            deal_hand()
+        if again == 'e':
+            print "This machine hates you"
+        else:
+            print "Input a valid response"
+            quit()
+        playAgain()
+    play_game()

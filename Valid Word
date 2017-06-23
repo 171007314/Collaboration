@@ -1,0 +1,12 @@
+def is_valid_word(word, hand, word_list):
+    x = []
+    for letter in word:
+        x.append(letter)
+    y = "".join(x)
+    print y
+    if y in word_list:
+        print "True"
+        return True
+    else:
+        print "False"
+        return False
